@@ -12,7 +12,7 @@ export class KnowledgeComponent {
     {
       title: 'Principais Tecnologias',
       items:
-        'Java (6-21), Spring Boot, Spring Cloud, Microservices, Angular (11-17), TypeScript, Docker, Kubernetes, CI/CD (Jenkins e Azure DevOps).',
+        'Java (7-21), Spring Boot, Spring Cloud, Microservices, Angular (5-17), TypeScript, Docker, Kubernetes, CI/CD (Jenkins e CI/CD).',
     },
     {
       title: 'Backend',
@@ -43,7 +43,7 @@ export class KnowledgeComponent {
     {
       title: 'DevOps e Observabilidade',
       items:
-        'Docker, Kubernetes, Jenkins, Azure DevOps, AWS, SonarQube, Prometheus e Grafana.',
+        'Docker, Kubernetes, Jenkins, SonarQube, Prometheus e Grafana.',
     },
     {
       title: 'Ferramentas e Metodologias',
