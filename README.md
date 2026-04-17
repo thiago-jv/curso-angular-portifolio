@@ -1,27 +1,84 @@
-# CursoAngularPortifolio
+# Portfólio Angular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.17.
+Portfólio pessoal desenvolvido em Angular 17 para apresentar projetos, experiências profissionais e stack técnica em uma interface responsiva.
 
-## Development server
+O projeto foi construído como prática de estudos com base no curso de Angular da Udemy:
+https://www.udemy.com/course/curso-de-angular/?srsltid=AfmBOorFvdxsf1cQa5RmcA7aLAWTvn2Aq0lE78ApRW80692k5pSbkWnX
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Demo
 
-## Code scaffolding
+Aplicação publicada no GitHub Pages:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+https://thiago-jv.github.io/curso-angular-portifolio/
 
-## Build
+## Preview
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+![Preview do portfólio](src/assets/img/og-image-portfolio.png)
 
-## Running unit tests
+## Funcionalidades
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- Apresentação pessoal com links de contato.
+- Sessão de conhecimentos com stack técnica.
+- Sessão de experiências profissionais e acadêmicas.
+- Listagem de projetos com carregamento tardio usando `@defer`.
+- Modal com detalhes dos projetos utilizando Angular Material.
+- Layout responsivo para desktop e mobile.
 
-## Running end-to-end tests
+## Stack
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+- Angular 17
+- TypeScript
+- SCSS
+- Angular Material
+- RxJS
+- GitHub Pages
 
-## Further help
+## Estrutura principal
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+```text
+src/app/modules/portfolio/
+	components/
+		header/
+		knowledge/
+		experiences/
+		projects/
+		dialog/dialog-projects/
+	interface/
+	enum/
+	pages/home/
+```
+
+## Como executar localmente
+
+```bash
+npm install
+npm start
+```
+
+Abra `http://localhost:4200/` no navegador.
+
+## Scripts disponíveis
+
+```bash
+npm start            # ambiente de desenvolvimento
+npm run build        # build padrão
+npm run build:gh-pages
+npm run deploy:gh-pages
+npm test
+```
+
+## Deploy no GitHub Pages
+
+O deploy está configurado para publicar a aplicação no branch `gh-pages` com o `base-href` correto para este repositório.
+
+```bash
+npm run deploy:gh-pages
+```
+
+URL de publicação:
+
+https://thiago-jv.github.io/curso-angular-portifolio/
+
+## Objetivo do projeto
+
+Consolidar conceitos práticos de Angular, componentização, organização de estilos com SCSS e publicação de aplicações estáticas no GitHub Pages.
