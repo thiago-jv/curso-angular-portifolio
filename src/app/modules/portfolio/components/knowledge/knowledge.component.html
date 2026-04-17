@@ -1,0 +1,12 @@
+<div class="container">
+  <h2>Conhecimentos Tecnicos</h2>
+
+  <ul>
+    @for(category of categories(); track category.title){
+    <li>
+      <h3>{{ category.title }}</h3>
+      <p>{{ category.items }}</p>
+    </li>
+    }
+  </ul>
+</div>
