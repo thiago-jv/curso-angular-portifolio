@@ -1,19 +1,98 @@
 <div class="container">
-  <h2>Formacao, Certificados e Perfis</h2>
+  <h2>Formacao e Certificados</h2>
 
-  <ul>
-    @for(item of arrayProjects(); track item){
-    <li>
-      <button (click)="openDialog(item)">
-        <img
-          [src]="item.src"
-          [alt]="item.alt"
-          [attr.width]="item.with"
-          [attr.height]="item.height"
-          loading="lazy"
-        />
-      </button>
-    </li>
-    }
-  </ul>
+  <section class="category-block">
+    <h3>Formacao</h3>
+    <ul>
+      @for(item of formacaoItems(); track item.title){
+      <li>
+        <button
+          class="project-card"
+          type="button"
+          (click)="openDialog(item)"
+          [attr.aria-label]="'Abrir detalhes de ' + item.title"
+        >
+          <div class="project-card__media">
+            <img
+              [src]="item.src"
+              [alt]="item.alt"
+              [attr.width]="item.with"
+              [attr.height]="item.height"
+              loading="lazy"
+            />
+          </div>
+
+          <div class="project-card__content">
+            <h4>{{ item.title }}</h4>
+            <span>Clique para ver detalhes</span>
+          </div>
+        </button>
+      </li>
+      }
+    </ul>
+  </section>
+
+  <section class="category-block">
+    <h3>Certificados</h3>
+    <ul>
+      @for(item of certificadoItems(); track item.title){
+      <li>
+        <button
+          class="project-card"
+          type="button"
+          (click)="openDialog(item)"
+          [attr.aria-label]="'Abrir detalhes de ' + item.title"
+        >
+          <div class="project-card__media">
+            <img
+              [src]="item.src"
+              [alt]="item.alt"
+              [attr.width]="item.with"
+              [attr.height]="item.height"
+              loading="lazy"
+            />
+          </div>
+
+          <div class="project-card__content">
+            <h4>{{ item.title }}</h4>
+            <span>Clique para ver detalhes</span>
+          </div>
+        </button>
+      </li>
+      }
+    </ul>
+  </section>
+
+  @if(outrosItems().length){
+  <section class="category-block">
+    <h3>Outros</h3>
+    <ul>
+      @for(item of outrosItems(); track item.title){
+      <li>
+        <button
+          class="project-card"
+          type="button"
+          (click)="openDialog(item)"
+          [attr.aria-label]="'Abrir detalhes de ' + item.title"
+        >
+          <div class="project-card__media">
+            <img
+              [src]="item.src"
+              [alt]="item.alt"
+              [attr.width]="item.with"
+              [attr.height]="item.height"
+              loading="lazy"
+            />
+          </div>
+
+          <div class="project-card__content">
+            <h4>{{ item.title }}</h4>
+            <span>Clique para ver detalhes</span>
+          </div>
+        </button>
+      </li>
+      }
+    </ul>
+  </section>
+  }
 </div>

@@ -1,6 +1,7 @@
 :root {
-  --primary: #2fbf71;
-  --primary-010: #21804d;
+  --primary: #27a964;
+  --primary-010: #1f7f4c;
+  --primary-020: #143828;
 
   --secondary: #06628a;
   --secondary-010: #06374e;
@@ -9,6 +10,12 @@
 
   --black: #10101a;
   --black-010: #2a2a30;
+  --surface: #1b1b24;
+  --surface-010: #242431;
 
-  --grey: #9b9ba0;
+  --grey: #c5c5d0;
+  --text-strong: #f5f6fa;
+
+  --focus-ring: 0 0 0 3px rgba(39, 169, 100, 0.35);
+  --motion-fast: 180ms ease;
 }

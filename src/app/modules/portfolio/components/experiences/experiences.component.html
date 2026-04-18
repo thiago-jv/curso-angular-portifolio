@@ -1,13 +1,27 @@
 <div class="container">
   <h2>Experiencia Profissional</h2>
 
+  <section class="totals" aria-label="Totalizadores de tempo de carreira">
+    <article class="total-card">
+      <h3>{{ totalDev() }}</h3>
+    </article>
+
+    <article class="total-card">
+      <h3>{{ totalPreDev() }}</h3>
+    </article>
+  </section>
+
   @for(item of arrayExperiences(); track item;){
   <details>
     <summary>
       <p>
         <strong> {{ item.summary.strong }} </strong>
-        {{ item.summary.p }}
+        <span class="period-row">
+          <span>{{ item.summary.p }}</span>
+          <span class="duration">{{ item.summary.duration }}</span>
+        </span>
       </p>
+      <span class="summary-action" aria-hidden="true"></span>
     </summary>
     <article [innerHTML]="item.text"></article>
   </details>

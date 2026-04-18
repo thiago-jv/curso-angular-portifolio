@@ -1,5 +1,6 @@
 :host {
-  margin-top: 25px;
+  margin-top: 0;
+  padding: 34px 0 10px;
 
   display: flex;
   justify-content: center;
@@ -8,19 +9,43 @@
 
   h2 {
     text-align: center;
-    margin: 0 0 25px 0;
+    margin: 0 0 20px;
+  }
+
+  .totals {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(220px, 1fr));
+    gap: 12px;
+    margin-bottom: 14px;
+
+    .total-card {
+      margin: 0;
+      padding: 14px 16px;
+      border: 1px solid rgba(39, 169, 100, 0.5);
+      border-radius: 10px;
+      background: var(--surface);
+
+      h3 {
+        margin: 0;
+        font-size: 15px;
+        color: var(--text-strong);
+        text-align: center;
+      }
+    }
   }
 
   details {
     overflow: hidden;
     margin-top: 10px;
-    background: var(--black-010);
-    border-radius: 7px;
+    background: var(--surface);
+    border-radius: 10px;
+    border: 1px solid rgba(39, 169, 100, 0.38);
 
     summary,
     article {
-      padding: 10px 20px;
-      transition: 0.5s;
+      padding: 12px 20px;
+      transition: background var(--motion-fast), color var(--motion-fast),
+        border-color var(--motion-fast), box-shadow var(--motion-fast);
     }
 
     summary {
@@ -30,37 +55,101 @@
       justify-content: space-between;
       align-items: center;
 
-      background: var(--primary);
+      background: linear-gradient(
+        90deg,
+        rgba(39, 169, 100, 0.28),
+        rgba(39, 169, 100, 0.14)
+      );
+
+      &:hover {
+        background: linear-gradient(
+          90deg,
+          rgba(39, 169, 100, 0.36),
+          rgba(39, 169, 100, 0.2)
+        );
+      }
+
+      &:focus-visible {
+        outline: none;
+        box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.2), var(--focus-ring);
+      }
+
+      .summary-action {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 13px;
+        font-weight: 600;
+        color: var(--text-strong);
+        opacity: 0.92;
+
+        &::before {
+          content: "Ver mais";
+        }
+
+        &::after {
+          content: url("../../../../../assets/icons/chevron-down.svg");
+          margin-top: 3px;
+        }
+      }
 
       p {
-        font-size: 14px;
-        color: var(--black-010);
+        font-size: 15px;
+        color: var(--text-strong);
 
         padding: 0;
         margin: 0;
 
         display: flex;
         flex-direction: column;
+
+        .period-row {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+          flex-wrap: wrap;
+        }
+
+        .duration {
+          font-weight: 600;
+          opacity: 0.95;
+        }
       }
+    }
+
+    article {
+      color: var(--grey);
+      line-height: 1.65;
     }
 
     &[open] {
       summary {
-        &::after {
-          content: url("../../../../../assets/icons/chevron-up.svg");
-          margin-top: 5px;
+        .summary-action {
+          &::before {
+            content: "Ver menos";
+          }
+
+          &::after {
+            content: url("../../../../../assets/icons/chevron-up.svg");
+          }
         }
 
         border-radius: 7px 7px 0 0;
       }
     }
+  }
 
-    &:not([open]) {
-      summary {
-        &::after {
-          content: url("../../../../../assets/icons/chevron-down.svg");
-          margin-top: 5px;
-        }
+  @media (max-width: 750px) {
+    .totals {
+      grid-template-columns: 1fr;
+    }
+
+    details summary {
+      align-items: flex-start;
+      gap: 10px;
+
+      .summary-action {
+        font-size: 12px;
       }
     }
   }

@@ -1,11 +1,60 @@
 :host {
-  &::before {
-    content: "";
-    display: flex;
+  .tech-carousel {
+    position: relative;
     width: 100%;
-    height: 150px;
-    margin-bottom: -65px;
-    background: var(--primary);
+    height: 124px;
+    overflow: hidden;
+    margin-bottom: 0;
+    background: linear-gradient(180deg, var(--primary) 0%, #22a661 100%);
+    box-shadow: inset 0 -18px 30px rgba(0, 0, 0, 0.14);
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 80px;
+      z-index: 1;
+      pointer-events: none;
+    }
+
+    &::before {
+      left: 0;
+      background: linear-gradient(to right, var(--primary), transparent);
+    }
+
+    &::after {
+      right: 0;
+      background: linear-gradient(to left, var(--primary), transparent);
+    }
+
+    .tech-carousel__track {
+      width: max-content;
+      height: 100%;
+
+      display: flex;
+      align-items: center;
+      gap: 12px;
+
+      padding: 0 20px;
+      animation: tech-marquee 42s linear infinite;
+    }
+
+    .chip {
+      flex-shrink: 0;
+      background: rgba(10, 31, 22, 0.22);
+      color: var(--white);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      border-radius: 999px;
+      padding: 9px 14px;
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: 0.2px;
+      white-space: nowrap;
+      text-transform: uppercase;
+      backdrop-filter: blur(2px);
+    }
   }
 
   header,
@@ -17,7 +66,12 @@
   }
 
   header {
+    margin-top: -40px;
+    position: relative;
+    z-index: 2;
+
     img {
+      display: block;
       border-radius: 100px;
       border: 5px solid var(--white);
       margin-bottom: 15px;
@@ -26,7 +80,34 @@
 
   aside {
     p {
+      margin: 0;
+    }
+
+    .headline,
+    .location {
       text-align: center;
+    }
+
+    .headline {
+      font-size: 28px;
+      font-weight: 700;
+      color: var(--white);
+      line-height: 1.2;
+      margin-bottom: 8px;
+    }
+
+    .location {
+      font-size: 17px;
+      margin-bottom: 16px;
+    }
+
+    .about-text {
+      max-width: 690px;
+      margin: 0 auto 14px;
+      text-align: justify;
+      text-justify: inter-word;
+      font-size: 15px;
+      line-height: 1.75;
     }
 
     nav ul,
@@ -74,6 +155,7 @@
 
             p {
               margin: 3px 0;
+              text-align: left;
             }
 
             strong {
@@ -85,7 +167,55 @@
     }
   }
 
+  @keyframes tech-marquee {
+    from {
+      transform: translateX(0);
+    }
+
+    to {
+      transform: translateX(-50%);
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .tech-carousel .tech-carousel__track {
+      animation: none;
+    }
+  }
+
   @media (max-width: 750px) {
+    .tech-carousel {
+      height: 110px;
+
+      .tech-carousel__track {
+        gap: 10px;
+        animation-duration: 32s;
+      }
+
+      .chip {
+        padding: 8px 12px;
+        font-size: 12px;
+      }
+    }
+
+    header {
+      margin-top: -32px;
+    }
+
+    aside .headline {
+      font-size: 24px;
+    }
+
+    aside .location {
+      font-size: 16px;
+    }
+
+    aside .about-text {
+      max-width: 100%;
+      text-align: left;
+      line-height: 1.6;
+    }
+
     aside nav ul,
     section {
       flex-direction: column;

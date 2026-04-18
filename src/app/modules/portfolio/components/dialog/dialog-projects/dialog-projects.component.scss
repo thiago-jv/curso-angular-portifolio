@@ -1,9 +1,16 @@
 ::ng-deep .dialog-container-projects .mdc-dialog__container {
-  width: 850px;
+  width: min(920px, 94vw);
+}
+
+::ng-deep .dialog-container-projects .mat-mdc-dialog-surface {
+  background: var(--surface);
+  border: 1px solid rgba(39, 169, 100, 0.35);
+  border-radius: 16px;
+  color: var(--grey);
 }
 
 :host {
-  padding: 10px 30px;
+  padding: 18px 24px 16px;
   display: flex;
   flex-direction: column;
 
@@ -12,43 +19,91 @@
   p,
   mat-dialog-content {
     padding: 0;
-    margin: 0 0 15px;
+    margin: 0 0 14px;
   }
 
   header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 14px;
 
     h2 {
-      font-size: 22px;
+      font-size: 26px;
+      line-height: 1.2;
       padding: 0;
       margin: 0;
-      color: var(--black-010);
+      color: var(--text-strong);
     }
 
     button {
-      background: none;
-      border: none;
-      padding: 0;
+      width: 38px;
+      height: 38px;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 10px;
+      padding: 7px;
       cursor: pointer;
+      transition: background var(--motion-fast), border-color var(--motion-fast),
+        box-shadow var(--motion-fast), transform var(--motion-fast);
+
+      &:hover {
+        background: rgba(255, 255, 255, 0.09);
+        border-color: rgba(255, 255, 255, 0.35);
+        transform: translateY(-1px);
+      }
+
+      &:focus-visible {
+        outline: none;
+        box-shadow: var(--focus-ring);
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
     }
   }
 
   h3 {
     font-size: 18px;
-    color: var(--black-010);
+    color: var(--primary);
   }
 
   article {
-    margin-bottom: 15px;
+    margin-bottom: 18px;
 
     p {
       font-size: 16px;
+      line-height: 1.65;
+      color: var(--grey);
     }
   }
 
   nav {
     display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    .btn {
+      min-width: 190px;
+    }
+  }
+
+  @media (max-width: 750px) {
+    padding: 14px 14px 12px;
+
+    header h2 {
+      font-size: 22px;
+    }
+
+    article p {
+      font-size: 15px;
+    }
+
+    nav .btn {
+      min-width: 100%;
+    }
   }
 }

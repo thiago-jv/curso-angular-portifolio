@@ -1,9 +1,21 @@
+<section class="tech-carousel" aria-label="Tecnologias e ferramentas de atuacao">
+  <div class="tech-carousel__track">
+    @for(item of techCarouselItems; track item){
+    <span class="chip">{{ item }}</span>
+    }
+
+    @for(item of techCarouselItems; track item + '-clone'){
+    <span class="chip" aria-hidden="true">{{ item }}</span>
+    }
+  </div>
+</section>
+
 <header>
   <img
     src="assets/img/thiago.jpeg"
     alt="Thiago Henrique Melo da Silva - Foto de Perfil"
-    width="130px"
-    height="130px"
+    width="230px"
+    height="230px"
     loading="eager"
   />
   <h1>Thiago Henrique Melo da Silva</h1>
@@ -11,24 +23,31 @@
 
 <aside>
   <div class="container">
-    <p>Desenvolvedor Java Senior | Microservices | Spring Boot | Angular</p>
-    <p>Manaus, Amazonas, Brasil</p>
-    <p>
-      🚀 Profissional com mais de 8 anos de experiencia em desenvolvimento de
-      software, atuando como Desenvolvedor Java Full Stack em projetos de grande
-      porte e alta complexidade, com foco em backend e frontend. Solida formacao
-      em Sistemas de Informacao pelo Centro Universitario Fametro 🎓, MBA em
-      Gestao de Projetos, Metodologias Ageis e Inovacao pela Academy Educacao
-      📚, cursando MBA em Lideranca, Gestao de Equipes e Produtividade (PUCRS),
-      alem da certificacao Scrum Foundation – CertiProf.
+    <p class="headline">Analista Desenvolvedor Java - Fullstack - Angular</p>
+    <p class="location">Manaus, Amazonas, Brasil</p>
+    <p class="about-text">
+      Minha trajetoria em tecnologia comecou em 2013, no estagio em TI na
+      Distribuidora Tapajos, com suporte tecnico e manutencao de infraestrutura.
+      Em 2014, atuei no Hospital Joao Lucio com suporte a usuarios e sistemas
+      hospitalares, e no mesmo periodo realizei estagio em desenvolvimento de
+      software no Centro Universitario Fametro. A partir dai, evolui para
+      funcoes de analise e desenvolvimento no Grupo Bringel, participando da
+      implantacao de sistemas hospitalares e, em seguida, do desenvolvimento
+      full stack de solucoes para rastreabilidade na area da saude.
     </p>
-    <p>
-      🏢 Experiencia em: Spassu, Globalweb Corp, Invillia, Kaspper, DBC
-      Company, AMcom e Grupo Bringel, com atuacao nos segmentos financeiro 💰,
-      e-commerce 🛒, saude 🏥, portos ⚓, seguranca privada 🛡️, rastreamento
-      logístico 📦 e solucoes inteligentes para medicao de agua 💧. Atuacao em
-      todas as etapas do ciclo de desenvolvimento, do levantamento de requisitos
-      ate a entrega em producao.
+    <p class="about-text">
+      Nos anos seguintes, consolidei minha carreira como Desenvolvedor Java em
+      empresas como AMcom, DBC Company, Kaspper, Invillia e Globalweb, atuando
+      em projetos dos setores de saude, e-commerce, financeiro e seguranca
+      privada, com foco em Java, Spring, microservicos, Angular, qualidade de
+      codigo e CI/CD. Hoje atuo na Spassu como Analista Desenvolvedor Java
+      Fullstack Angular, em projeto para o setor de petroleo, trabalhando com
+      Java 8 e Spring Boot no backend, Angular 17 com Material no frontend,
+      CI/CD com Jenkins e observabilidade com Grafana e Prometheus. Nesse
+      contexto, aplico SOLID e Clean Code, participo das discussoes tecnicas de
+      HUs e contribuo para entregas estaveis, com integracao eficiente entre
+      frontend e backend, dentro dos prazos das sprints em ambiente agil com
+      Scrum e Kanban.
     </p>
 
 

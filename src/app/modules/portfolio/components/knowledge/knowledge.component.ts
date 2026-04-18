@@ -21,7 +21,7 @@ export class KnowledgeComponent {
     },
     {
       title: 'Frontend',
-      items: 'Angular, PrimeNG, Angular Material, HTML, CSS e JavaScript.',
+      items: 'Angular, PrimeNG, Angular Material, HTML, CSS, JavaScript e TypeScript',
     },
     {
       title: 'Testes',
@@ -34,7 +34,7 @@ export class KnowledgeComponent {
     },
     {
       title: 'Banco de Dados',
-      items: 'PostgreSQL, Oracle e MongoDB.',
+      items: 'PostgreSQL, Oracle, MongoDB e Reddis.',
     },
     {
       title: 'Mensageria',
