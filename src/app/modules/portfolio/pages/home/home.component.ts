@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 
 import { ContactComponent } from '../../components/contact/contact.component';
+import { ContributionsComponent } from '../../components/contributions/contributions.component';
 import { DeliveriesComponent } from '../../components/deliveries/deliveries.component';
 import { ExperiencesComponent } from '../../components/experiences/experiences.component';
 import { HeaderComponent } from '../../components/header/header.component';
@@ -13,6 +14,7 @@ import { ProjectsComponent } from '../../components/projects/projects.component'
   standalone: true,
   imports: [
     HeaderComponent,
+    ContributionsComponent,
     DeliveriesComponent,
     KnowledgeComponent,
     ExperiencesComponent,

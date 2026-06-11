@@ -16,34 +16,28 @@ interface Delivery {
 export class DeliveriesComponent {
   public readonly deliveries = signal<Delivery[]>([
     {
-      title: 'Sistemas hospitalares',
+      title: 'Sistemas para a área da saúde',
       description:
-        'Desenvolvimento, implantação e manutenção de soluções para rastreabilidade de materiais e apoio a operações da área da saúde.',
+        'Desenvolvimento e implantação de sistemas para rastreamento de materiais hospitalares, incluindo levantamento de requisitos, aplicações web, APIs e bancos de dados.',
       technologies: ['Java', 'Spring', 'PostgreSQL', 'Oracle'],
     },
     {
       title: 'Projetos financeiros',
       description:
-        'Desenvolvimento de APIs REST, integrações corporativas, testes automatizados e funcionalidades orientadas às regras de negócio do setor financeiro.',
-      technologies: [
-        'Java',
-        'Spring Boot',
-        'Spring Cloud',
-        'Docker',
-        'Kubernetes',
-      ],
+        'Implementação de funcionalidades, testes automatizados, correções e integrações em aplicações utilizadas no setor financeiro.',
+      technologies: ['Java', 'Spring Boot', 'Angular', 'Jenkins'],
     },
     {
-      title: 'Petróleo e gás',
+      title: 'E-commerce e integrações',
       description:
-        'Desenvolvimento full stack com integração entre backend, frontend, esteira de entrega e observabilidade.',
-      technologies: [
-        'Java 8',
-        'Spring Boot',
-        'Angular 17',
-        'Jenkins',
-        'Grafana',
-      ],
+        'Desenvolvimento e manutenção de serviços, produtores e consumidores Kafka, documentação de integrações e participação na modernização de aplicações.',
+      technologies: ['Java', 'Quarkus', 'Kafka', 'MongoDB'],
+    },
+    {
+      title: 'Petróleo e segurança privada',
+      description:
+        'Desenvolvimento full stack com Java e Angular, integração entre frontend e backend, geração de relatórios e apoio aos processos de CI/CD e observabilidade.',
+      technologies: ['Java', 'Spring Boot', 'Angular', 'Jenkins'],
     },
   ]);
 }

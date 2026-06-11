@@ -31,7 +31,7 @@ export class ProjectsComponent {
       with: '140px',
       height: '90px',
       description:
-        '<p><strong>Centro Universitário Fametro</strong> - Sistemas de Informação (2009-2013).</p><p>Bacharelado com formação em desenvolvimento de software, bancos de dados, redes, engenharia de software e gestão de TI.</p>',
+        '<p><strong>Centro Universitário Fametro</strong> - Bacharelado em Sistemas de Informação (2009-2013).</p><p>Formação em desenvolvimento de software, bancos de dados, redes, engenharia de software e gestão de TI.</p>',
       links: [
         {
           name: 'Perfil no LinkedIn',
@@ -47,7 +47,7 @@ export class ProjectsComponent {
       with: '140px',
       height: '90px',
       description:
-        '<p><strong>Academy Educação</strong> - MBA em Gestão de Projetos, Metodologias Ágeis e Inovação (2024-2025).</p><p>Formação voltada à gestão de projetos, liderança de equipes, métodos ágeis e inovação.</p>',
+        '<p><strong>Academy Educação</strong> - MBA em Gestão de Projetos, Metodologias Ágeis e Inovação (2024-2025).</p><p>Formação complementar em planejamento, acompanhamento de projetos, métodos ágeis e inovação.</p>',
       links: [
         {
           name: 'LinkedIn',
@@ -62,7 +62,7 @@ export class ProjectsComponent {
       with: '140px',
       height: '90px',
       description:
-        '<p><strong>Anhanguera Educacional</strong> - Java Applied Engineering (2025-2026).</p><p>Formação com foco em engenharia de software aplicada ao ecossistema Java.</p>',
+        '<p><strong>Anhanguera Educacional</strong> - Pós-graduação Java Applied Engineering (2025-2026).</p><p>Formação direcionada ao desenvolvimento de software e às práticas utilizadas no ecossistema Java.</p>',
       links: [
         {
           name: 'LinkedIn',
@@ -78,7 +78,7 @@ export class ProjectsComponent {
       with: '140px',
       height: '90px',
       description:
-        '<p><strong>PUCRS</strong> - MBA em Gestão e Negócios com foco em Liderança e Pessoas (abr/2026-abr/2027).</p><p>Formação em andamento, voltada ao desenvolvimento de competências de liderança, gestão de pessoas, tomada de decisão e produtividade.</p>',
+        '<p><strong>PUCRS</strong> - MBA em Liderança, Gestão de Equipes e Produtividade (2026-2027).</p><p>Formação em andamento sobre colaboração, gestão de pessoas, tomada de decisão e produtividade no trabalho.</p>',
       links: [
         {
           name: 'LinkedIn',
@@ -94,7 +94,7 @@ export class ProjectsComponent {
       with: '140px',
       height: '90px',
       description:
-        '<p>Scrum Foundation Professional Certificate (SFPC) - CertiProf.</p><p>Conhecimentos aplicados em contextos profissionais com Scrum e Kanban.</p>',
+        '<p><strong>Scrum Foundation Professional Certificate (SFPC)</strong> - CertiProf.</p><p>Certificação sobre fundamentos, papéis, eventos e artefatos do Scrum.</p>',
       links: [
         {
           name: 'Ver no LinkedIn',
@@ -126,7 +126,7 @@ export class ProjectsComponent {
       with: '140px',
       height: '90px',
       description:
-        '<p><strong>Branas</strong> - Curso de Clean Code e Clean Architecture.</p><p>Conteúdo sobre refatoração, orientação a objetos, TDD, arquitetura hexagonal, Domain-Driven Design, microserviços, Event-Driven Architecture, CQRS, SOLID e Design Patterns.</p>',
+        '<p><strong>Rodrigo Branas</strong> - Curso de Clean Code e Clean Architecture.</p><p>Curso complementar sobre refatoração, orientação a objetos, testes, SOLID, Design Patterns e organização de aplicações.</p>',
       links: [
         {
           name: 'Ver no LinkedIn',
@@ -158,7 +158,7 @@ export class ProjectsComponent {
       with: '140px',
       height: '90px',
       description:
-        '<p>Certificado de participação no <strong>Management 3.0 Foundation Workshop</strong> (set/2024).</p><p>Conteúdo sobre liderança ágil, motivação de equipes, colaboração, autonomia e adaptação a mudanças.</p>',
+        '<p>Certificado de participação no <strong>Management 3.0 Foundation Workshop</strong> (set/2024).</p><p>Formação complementar sobre colaboração, autonomia, motivação e ambientes de trabalho.</p>',
       links: [
         {
           name: 'Ver no LinkedIn',
@@ -174,7 +174,7 @@ export class ProjectsComponent {
       with: '140px',
       height: '90px',
       description:
-        '<p>Curso de <strong>Liderança com Técnicas de PNL</strong>, concluído em 18/08/2024.</p><p>Formação voltada à comunicação, influência, autoconhecimento e habilidades de liderança.</p>',
+        '<p>Curso de <strong>Liderança com Técnicas de PNL</strong>, concluído em 18/08/2024.</p><p>Formação complementar sobre comunicação e autoconhecimento.</p>',
       links: [
         {
           name: 'Ver no LinkedIn',
@@ -190,7 +190,7 @@ export class ProjectsComponent {
       with: '140px',
       height: '90px',
       description:
-        '<p>Certificação em <strong>Análise de Perfil Comportamental DISC</strong>, emitida em ago/2024.</p><p>Capacitação para interpretar perfis com base nos fatores Dominância, Influência, Estabilidade e Conformidade.</p>',
+        '<p>Certificação em <strong>Análise de Perfil Comportamental DISC</strong>, emitida em ago/2024.</p><p>Formação complementar para compreensão de perfis e estilos de comunicação.</p>',
       links: [
         {
           name: 'Ver no LinkedIn',

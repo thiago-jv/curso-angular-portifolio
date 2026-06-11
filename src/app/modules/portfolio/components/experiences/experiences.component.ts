@@ -19,7 +19,7 @@ export class ExperiencesComponent {
       },
       category: 'dev',
       months: 6,
-      text: '<p>Atuação no setor de petróleo com Java 8 e Spring Boot no backend, Angular 17 com Material no frontend, CI/CD com Jenkins e observabilidade com Grafana e Prometheus.</p><p>Participação nas discussões técnicas das histórias de usuário, aplicando SOLID e Clean Code na definição de soluções junto ao time.</p><p>Contribuição para entregas estáveis e integração entre frontend e backend em ambiente ágil com Scrum e Kanban.</p>',
+      text: '<p><strong>Contexto:</strong> projeto do setor de petróleo com desenvolvimento de uma aplicação corporativa.</p><p><strong>Responsabilidades:</strong> desenvolveu e manteve funcionalidades no backend e no frontend, integrou as camadas da aplicação, corrigiu problemas e participou dos refinamentos técnicos das histórias de usuário.</p><p><strong>Tecnologias:</strong> Java 8, Spring Boot, Angular 17, Angular Material, Jenkins, Grafana e Prometheus.</p>',
     },
     {
       summary: {
@@ -29,7 +29,7 @@ export class ExperiencesComponent {
       },
       category: 'dev',
       months: 8,
-      text: '<p>Atuação em projeto para o setor de segurança privada, com Java 11, Lombok, JPA, EJB, JUnit, TDD, Oracle, SonarQube e Jenkins no backend, utilizando JBoss, WildFly e Keycloak.</p><p>Implementação de funcionalidades, consultas e atualizações no banco de dados, elaboração de scripts para o DBA e desenvolvimento frontend com Angular 11, PrimeNG e RxJS. Integração entre camadas por DTOs e VOs e geração de relatórios com JasperReports.</p><p>Participação em discussões técnicas, aplicação de SOLID e Clean Code e acompanhamento das demandas pelo Jira.</p>',
+      text: '<p><strong>Contexto:</strong> sistema corporativo para o setor de segurança privada.</p><p><strong>Responsabilidades:</strong> implementou funcionalidades no backend e no frontend, realizou consultas e atualizações no banco de dados, preparou scripts para o DBA, integrou as camadas por DTOs e VOs e manteve relatórios com JasperReports.</p><p><strong>Tecnologias:</strong> Java 11, EJB, JPA, JUnit, Oracle, Keycloak, JBoss, WildFly, Angular 11, PrimeNG, RxJS, Jenkins e SonarQube.</p>',
     },
     {
       summary: {
@@ -39,7 +39,7 @@ export class ExperiencesComponent {
       },
       category: 'dev',
       months: 11,
-      text: '<p>Atuação em projetos do setor financeiro com Java, Spring Boot, Spring Cloud, Docker, Kubernetes, Gradle, Maven, Jenkins e SonarQube em ambiente Linux.</p><p>Desenvolvimento de funcionalidades, testes automatizados, documentação e revisão de código, com foco em TDD, SOLID e Clean Code.</p><p>Participação em refinamentos técnicos e de negócio, definição de tarefas, remoção de impedimentos e acompanhamento de demandas pelo Jira.</p>',
+      text: '<p><strong>Contexto:</strong> projetos de desenvolvimento de software para o setor financeiro.</p><p><strong>Responsabilidades:</strong> desenvolveu funcionalidades, criou e manteve testes automatizados, documentou alterações, revisou código e participou de refinamentos técnicos e de negócio.</p><p><strong>Tecnologias:</strong> Java, Spring Boot, Spring Cloud, Docker, Kubernetes, Jenkins, SonarQube, Gradle, Maven, Linux e Jira.</p>',
     },
     {
       summary: {
@@ -49,7 +49,7 @@ export class ExperiencesComponent {
       },
       category: 'dev',
       months: 10,
-      text: '<p>Atuação em fábrica de software para cliente do setor financeiro, conduzindo histórias de usuário da implementação à entrega.</p><p>Stack com Java 8, EJB, DB2, WebSphere, Angular, Maven, Eclipse, DBeaver e iReport Designer.</p><p>Responsabilidade por documentação no Azure DevOps, apresentação de funcionalidades, deploys com Jenkins e correção de bugs e code smells apontados pelo SonarQube.</p>',
+      text: '<p><strong>Contexto:</strong> fábrica de software responsável por demandas de um cliente do setor financeiro.</p><p><strong>Responsabilidades:</strong> implementou histórias de usuário, documentou funcionalidades no Azure DevOps, apresentou entregas, realizou deploys com Jenkins e corrigiu bugs e apontamentos do SonarQube.</p><p><strong>Tecnologias:</strong> Java 8, EJB, DB2, WebSphere, Angular, Maven, Jenkins, SonarQube, Eclipse, DBeaver e iReport.</p>',
     },
     {
       summary: {
@@ -59,7 +59,7 @@ export class ExperiencesComponent {
       },
       category: 'dev',
       months: 21,
-      text: '<p>Atuação em projeto de e-commerce com Java 11, Spring Boot, Spring Data, APIs REST, Swagger, Lombok, Oracle, Docker e Azure DevOps.</p><p>Participação em pipelines de CI/CD, criação de produtores e consumidores Kafka, testes unitários e documentação técnica de um serviço para integrações internas e externas.</p><p>Participação na migração para Quarkus Reactive com Java 17, MongoDB, Hibernate Panache, Kafka, Keycloak com JWT, arquitetura hexagonal, JUnit, WireMock e RestAssured.</p>',
+      text: '<p><strong>Contexto:</strong> desenvolvimento e modernização de serviços de uma plataforma de e-commerce.</p><p><strong>Responsabilidades:</strong> manteve serviços e pipelines, desenvolveu produtores e consumidores Kafka, criou testes, documentou integrações e participou da migração de componentes para uma nova arquitetura.</p><p><strong>Tecnologias:</strong> Java 11 e 17, Spring Boot, Quarkus Reactive, Oracle, MongoDB, Hibernate Panache, Kafka, Keycloak, Docker, Azure DevOps, JUnit, WireMock e RestAssured.</p>',
     },
     {
       summary: {
@@ -69,7 +69,7 @@ export class ExperiencesComponent {
       },
       category: 'dev',
       months: 9,
-      text: '<p>Como Desenvolvedor Java, atuação em software para contabilidade com Java 8, JSF, PrimeFaces e Hibernate/JPA.</p><p>Como Analista de Sistemas II, atuação em projeto internacional da Philips com análise de requisitos, levantamento e detalhamento de necessidades e colaboração direta com Product Owner.</p><p>Contribuição para maior clareza das demandas e alinhamento entre negócio e desenvolvimento.</p>',
+      text: '<p><strong>Contexto:</strong> atuação em software para contabilidade e em projeto internacional da Philips.</p><p><strong>Responsabilidades:</strong> desenvolveu e manteve funcionalidades em Java e, como Analista de Sistemas II, levantou e documentou requisitos em colaboração com Product Owner e equipe de desenvolvimento.</p><p><strong>Tecnologias:</strong> Java 8, JSF, PrimeFaces, Hibernate/JPA e ferramentas de análise e documentação de requisitos.</p>',
     },
     {
       summary: {
@@ -79,7 +79,7 @@ export class ExperiencesComponent {
       },
       category: 'dev',
       months: 5,
-      text: '<p>Desenvolvimento de solução para rastrear saída, entrega e retorno de caixas hospitalares por QR Code.</p><p>Levantamento de requisitos e desenvolvimento full stack com Angular 8, Bootstrap, PrimeNG e TypeScript.</p><p>No backend, construção de API REST com Spring Boot, Spring Data e Tomcat para apoiar o controle da logística hospitalar.</p>',
+      text: '<p><strong>Contexto:</strong> sistema para rastreamento da saída, entrega e retorno de caixas hospitalares por QR Code.</p><p><strong>Responsabilidades:</strong> levantou requisitos com usuários, desenvolveu telas, integrou o frontend à API e implementou funcionalidades de consulta e atualização dos dados.</p><p><strong>Tecnologias:</strong> Java, Spring Boot, Spring Data, API REST, Angular 8, TypeScript, Bootstrap, PrimeNG e Tomcat.</p>',
     },
     {
       summary: {
@@ -89,7 +89,7 @@ export class ExperiencesComponent {
       },
       category: 'dev',
       months: 36,
-      text: '<p>Desenvolvimento de software para Central de Material Esterilizado, com rastreamento de itens cirúrgicos por QR Code.</p><p>Participação desde o levantamento conceitual até a implantação em produção, utilizando Java 8, Spring Security, PostgreSQL, JSF 2, PrimeFaces, AJAX, MVC e Hibernate/JPA.</p><p>Contribuição para o controle, a rastreabilidade e a segurança no gerenciamento de materiais cirúrgicos.</p>',
+      text: '<p><strong>Contexto:</strong> sistema para uma Central de Material Esterilizado, com rastreamento de itens cirúrgicos por QR Code.</p><p><strong>Responsabilidades:</strong> participou do levantamento conceitual, desenvolveu e manteve funcionalidades, integrou telas e banco de dados, gerou relatórios e apoiou a implantação em produção.</p><p><strong>Tecnologias:</strong> Java 8, Spring Security, PostgreSQL, JSF 2, PrimeFaces, AJAX, Hibernate/JPA e iReport.</p>',
     },
     {
       summary: {
@@ -99,7 +99,7 @@ export class ExperiencesComponent {
       },
       category: 'pre-dev',
       months: 34,
-      text: '<p>Participação na implantação de sistemas hospitalares em Manaus e região, incluindo unidades de referência.</p><p>Coordenação de implantações, alinhamento com equipes locais e suporte à configuração dos módulos PACS, HIS e LIS da Agfa HealthCare.</p><p>Contribuição para a modernização de processos hospitalares e o acesso à informação clínica.</p>',
+      text: '<p><strong>Contexto:</strong> implantação de sistemas hospitalares em unidades de saúde de Manaus e região.</p><p><strong>Responsabilidades:</strong> coordenou atividades de implantação, alinhou necessidades com equipes locais, configurou módulos e prestou suporte aos usuários.</p><p><strong>Sistemas:</strong> módulos PACS, HIS e LIS da Agfa HealthCare.</p>',
     },
     {
       summary: {
@@ -109,7 +109,7 @@ export class ExperiencesComponent {
       },
       category: 'pre-dev',
       months: 5,
-      text: '<p>Estágio em desenvolvimento de software com foco em análise de requisitos, modelagem de dados e apoio à implementação de funcionalidades acadêmicas.</p>',
+      text: '<p><strong>Contexto:</strong> estágio em desenvolvimento de sistemas acadêmicos.</p><p><strong>Responsabilidades:</strong> apoiou a análise de requisitos, a modelagem de dados e a implementação de funcionalidades.</p>',
     },
     {
       summary: {
@@ -119,7 +119,7 @@ export class ExperiencesComponent {
       },
       category: 'pre-dev',
       months: 7,
-      text: '<p>Suporte a usuários, configuração de equipamentos e atendimento a demandas do sistema de informações de pacientes.</p>',
+      text: '<p><strong>Contexto:</strong> suporte de TI em ambiente hospitalar.</p><p><strong>Responsabilidades:</strong> atendeu usuários, configurou computadores e notebooks e apoiou o uso do sistema de informações de pacientes.</p>',
     },
     {
       summary: {
@@ -129,7 +129,7 @@ export class ExperiencesComponent {
       },
       category: 'pre-dev',
       months: 7,
-      text: '<p>Estágio em TI com manutenção e configuração de computadores, suporte a usuários e gestão de impressoras.</p>',
+      text: '<p><strong>Contexto:</strong> estágio de suporte e infraestrutura de TI.</p><p><strong>Responsabilidades:</strong> realizou manutenção e configuração de computadores e notebooks, prestou suporte a usuários e administrou impressoras.</p>',
     },
   ]);
 

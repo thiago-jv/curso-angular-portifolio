@@ -4,6 +4,7 @@ interface PortfolioProject {
   title: string;
   description: string;
   technologies: string[];
+  learning: string;
   status?: string;
 }
 
@@ -19,21 +20,28 @@ export class PortfolioProjectsComponent {
     {
       title: 'Lucas Cell',
       description:
-        'Site institucional desenvolvido para fortalecer a presença digital e a descoberta local da Lucas Cell.',
+        'Site institucional desenvolvido para apresentar os serviços da empresa, facilitar o contato de clientes e apoiar sua presença digital.',
       technologies: ['Angular 22', 'Bootstrap', 'SEO Local', 'Vercel'],
+      learning:
+        'Aplicação prática de responsividade, publicação web e organização de conteúdo para busca local.',
     },
     {
       title: 'Sistema de Estoque Lucas Cell',
       description:
-        'Sistema para organização e controle de estoque, com aplicação web integrada a uma API.',
+        'Aplicação em desenvolvimento para cadastro de produtos e apoio à organização e ao controle de estoque.',
       technologies: ['Spring Boot', 'Angular', 'PostgreSQL', 'Docker'],
+      learning:
+        'Integração entre API, interface web, persistência de dados e ambiente conteinerizado.',
       status: 'Em desenvolvimento',
     },
     {
       title: 'Automação WhatsApp',
       description:
-        'Projeto de automação de fluxos no WhatsApp com integração de navegador, Node.js e recursos de IA.',
-      technologies: ['Playwright', 'Node.js', 'IA'],
+        'Projeto de estudo voltado à automação de tarefas no WhatsApp Web por meio do controle de navegador.',
+      technologies: ['Playwright', 'Node.js'],
+      learning:
+        'Automação de navegador, tratamento de fluxos assíncronos e experimentos de integração com recursos de IA.',
+      status: 'Em estudo',
     },
   ]);
 }

@@ -11,9 +11,9 @@ export class HeaderComponent {
   public readonly primaryTechnologies = [
     'Java',
     'Spring Boot',
-    'Microserviços',
     'Angular',
-    'AWS',
+    'APIs REST',
+    'PostgreSQL',
     'Docker',
   ];
 }

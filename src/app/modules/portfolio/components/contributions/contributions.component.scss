@@ -1,0 +1,45 @@
+:host {
+  display: block;
+}
+
+.contributions {
+  padding: 72px 0;
+  background: var(--black-010);
+
+  .contributions__grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+  }
+
+  article {
+    min-width: 0;
+    padding: 24px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    background: var(--surface);
+
+    h3 {
+      margin: 0 0 10px;
+      color: var(--primary);
+      font-size: 18px;
+    }
+
+    p {
+      margin: 0;
+      font-size: 15px;
+    }
+  }
+}
+
+@media (max-width: 850px) {
+  .contributions .contributions__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 560px) {
+  .contributions .contributions__grid {
+    grid-template-columns: 1fr;
+  }
+}

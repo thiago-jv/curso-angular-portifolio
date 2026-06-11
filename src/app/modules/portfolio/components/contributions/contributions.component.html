@@ -1,0 +1,26 @@
+<section
+  id="contribuicoes"
+  class="contributions"
+  aria-labelledby="contributions-title"
+>
+  <div class="container">
+    <div class="section-heading">
+      <p class="section-kicker">Áreas de atuação</p>
+      <h2 id="contributions-title">Como posso contribuir</h2>
+      <p>
+        Apoio empresas e equipes na transformação de necessidades de negócio em
+        soluções de software confiáveis, organizadas e adequadas ao contexto do
+        projeto.
+      </p>
+    </div>
+
+    <div class="contributions__grid">
+      @for (contribution of contributions(); track contribution.title) {
+      <article>
+        <h3>{{ contribution.title }}</h3>
+        <p>{{ contribution.description }}</p>
+      </article>
+      }
+    </div>
+  </div>
+</section>
