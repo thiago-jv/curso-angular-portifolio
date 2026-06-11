@@ -1,0 +1,27 @@
+<section id="entregas" class="deliveries" aria-labelledby="deliveries-title">
+  <div class="container">
+    <div class="section-heading">
+      <p class="section-kicker">Experiência aplicada</p>
+      <h2 id="deliveries-title">Principais entregas</h2>
+      <p>
+        Contextos em que participei da construção e evolução de soluções
+        corporativas.
+      </p>
+    </div>
+
+    <div class="deliveries__grid">
+      @for (delivery of deliveries(); track delivery.title; let index = $index) {
+      <article>
+        <span class="deliveries__index" aria-hidden="true">0{{ index + 1 }}</span>
+        <h3>{{ delivery.title }}</h3>
+        <p>{{ delivery.description }}</p>
+        <ul [attr.aria-label]="'Tecnologias utilizadas em ' + delivery.title">
+          @for (technology of delivery.technologies; track technology) {
+          <li>{{ technology }}</li>
+          }
+        </ul>
+      </article>
+      }
+    </div>
+  </div>
+</section>

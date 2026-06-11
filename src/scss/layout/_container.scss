@@ -1,12 +1,12 @@
 .container {
-  width: 700px;
+  width: min(1120px, calc(100% - 48px));
   position: relative;
+  margin-inline: auto;
   box-sizing: border-box;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 560px) {
   .container {
-    width: 100%;
-    padding: 0 20px;
+    width: min(100% - 32px, 1120px);
   }
 }

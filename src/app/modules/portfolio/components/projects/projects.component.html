@@ -1,98 +1,124 @@
-<div class="container">
-  <h2>Formacao e Certificados</h2>
+<section class="education" aria-label="Formação e certificações">
+  <div class="container">
+    <section
+      id="formacao"
+      class="category-block"
+      aria-labelledby="education-title"
+    >
+      <div class="section-heading">
+        <p class="section-kicker">Formação acadêmica</p>
+        <h2 id="education-title">Formação</h2>
+      </div>
+      <ul>
+        @for(item of formacaoItems(); track item.title){
+        <li>
+          <button
+            class="project-card"
+            type="button"
+            (click)="openDialog(item)"
+            [attr.aria-label]="'Abrir detalhes de ' + item.title"
+          >
+            <div class="project-card__media">
+              @if (item.src) {
+              <img
+                [src]="item.src"
+                [alt]="item.alt"
+                [attr.width]="item.with"
+                [attr.height]="item.height"
+                loading="lazy"
+              />
+              } @else {
+              <span class="project-card__fallback" aria-hidden="true">JAVA</span>
+              }
+            </div>
 
-  <section class="category-block">
-    <h3>Formacao</h3>
-    <ul>
-      @for(item of formacaoItems(); track item.title){
-      <li>
-        <button
-          class="project-card"
-          type="button"
-          (click)="openDialog(item)"
-          [attr.aria-label]="'Abrir detalhes de ' + item.title"
-        >
-          <div class="project-card__media">
-            <img
-              [src]="item.src"
-              [alt]="item.alt"
-              [attr.width]="item.with"
-              [attr.height]="item.height"
-              loading="lazy"
-            />
-          </div>
+            <div class="project-card__content">
+              <h4>{{ item.title }}</h4>
+              <span>Ver detalhes</span>
+            </div>
+          </button>
+        </li>
+        }
+      </ul>
+    </section>
 
-          <div class="project-card__content">
-            <h4>{{ item.title }}</h4>
-            <span>Clique para ver detalhes</span>
-          </div>
-        </button>
-      </li>
-      }
-    </ul>
-  </section>
+    <section
+      id="certificacoes"
+      class="category-block"
+      aria-labelledby="certifications-title"
+    >
+      <div class="section-heading">
+        <p class="section-kicker">Desenvolvimento contínuo</p>
+        <h2 id="certifications-title">Certificações e cursos</h2>
+      </div>
+      <ul>
+        @for(item of certificadoItems(); track item.title){
+        <li>
+          <button
+            class="project-card"
+            type="button"
+            (click)="openDialog(item)"
+            [attr.aria-label]="'Abrir detalhes de ' + item.title"
+          >
+            <div class="project-card__media">
+              @if (item.src) {
+              <img
+                [src]="item.src"
+                [alt]="item.alt"
+                [attr.width]="item.with"
+                [attr.height]="item.height"
+                loading="lazy"
+              />
+              } @else {
+              <span class="project-card__fallback" aria-hidden="true">CERT</span>
+              }
+            </div>
 
-  <section class="category-block">
-    <h3>Certificados</h3>
-    <ul>
-      @for(item of certificadoItems(); track item.title){
-      <li>
-        <button
-          class="project-card"
-          type="button"
-          (click)="openDialog(item)"
-          [attr.aria-label]="'Abrir detalhes de ' + item.title"
-        >
-          <div class="project-card__media">
-            <img
-              [src]="item.src"
-              [alt]="item.alt"
-              [attr.width]="item.with"
-              [attr.height]="item.height"
-              loading="lazy"
-            />
-          </div>
+            <div class="project-card__content">
+              <h4>{{ item.title }}</h4>
+              <span>Ver detalhes</span>
+            </div>
+          </button>
+        </li>
+        }
+      </ul>
+    </section>
 
-          <div class="project-card__content">
-            <h4>{{ item.title }}</h4>
-            <span>Clique para ver detalhes</span>
-          </div>
-        </button>
-      </li>
-      }
-    </ul>
-  </section>
+    @if(outrosItems().length){
+    <section class="category-block">
+      <h2>Outros</h2>
+      <ul>
+        @for(item of outrosItems(); track item.title){
+        <li>
+          <button
+            class="project-card"
+            type="button"
+            (click)="openDialog(item)"
+            [attr.aria-label]="'Abrir detalhes de ' + item.title"
+          >
+            <div class="project-card__media">
+              @if (item.src) {
+              <img
+                [src]="item.src"
+                [alt]="item.alt"
+                [attr.width]="item.with"
+                [attr.height]="item.height"
+                loading="lazy"
+              />
+              } @else {
+              <span class="project-card__fallback" aria-hidden="true">+</span>
+              }
+            </div>
 
-  @if(outrosItems().length){
-  <section class="category-block">
-    <h3>Outros</h3>
-    <ul>
-      @for(item of outrosItems(); track item.title){
-      <li>
-        <button
-          class="project-card"
-          type="button"
-          (click)="openDialog(item)"
-          [attr.aria-label]="'Abrir detalhes de ' + item.title"
-        >
-          <div class="project-card__media">
-            <img
-              [src]="item.src"
-              [alt]="item.alt"
-              [attr.width]="item.with"
-              [attr.height]="item.height"
-              loading="lazy"
-            />
-          </div>
-
-          <div class="project-card__content">
-            <h4>{{ item.title }}</h4>
-            <span>Clique para ver detalhes</span>
-          </div>
-        </button>
-      </li>
-      }
-    </ul>
-  </section>
-  }
-</div>
+            <div class="project-card__content">
+              <h4>{{ item.title }}</h4>
+              <span>Ver detalhes</span>
+            </div>
+          </button>
+        </li>
+        }
+      </ul>
+    </section>
+    }
+  </div>
+</section>

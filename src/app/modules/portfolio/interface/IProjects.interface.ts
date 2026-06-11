@@ -1,6 +1,6 @@
 export interface IProjects {
   category: 'formacao' | 'certificado' | 'outros';
-  src: string;
+  src?: string;
   alt: string;
   title: string;
   with: string;

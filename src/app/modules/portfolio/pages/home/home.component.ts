@@ -1,9 +1,11 @@
 import { Component } from '@angular/core';
 
-// Components
+import { ContactComponent } from '../../components/contact/contact.component';
+import { DeliveriesComponent } from '../../components/deliveries/deliveries.component';
 import { ExperiencesComponent } from '../../components/experiences/experiences.component';
 import { HeaderComponent } from '../../components/header/header.component';
 import { KnowledgeComponent } from '../../components/knowledge/knowledge.component';
+import { PortfolioProjectsComponent } from '../../components/portfolio-projects/portfolio-projects.component';
 import { ProjectsComponent } from '../../components/projects/projects.component';
 
 @Component({
@@ -11,9 +13,12 @@ import { ProjectsComponent } from '../../components/projects/projects.component'
   standalone: true,
   imports: [
     HeaderComponent,
+    DeliveriesComponent,
     KnowledgeComponent,
     ExperiencesComponent,
+    PortfolioProjectsComponent,
     ProjectsComponent,
+    ContactComponent,
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',

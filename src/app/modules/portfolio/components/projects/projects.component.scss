@@ -1,31 +1,16 @@
 :host {
-  margin-top: 0;
-  padding: 38px 0 36px;
+  display: block;
+}
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-
+.education {
+  padding: 72px 0;
   background: var(--black-010);
 
-  h2 {
-    text-align: center;
-    margin: 0 0 22px;
-  }
-
   .category-block {
-    margin-top: 24px;
+    scroll-margin-top: 90px;
 
-    &:first-of-type {
-      margin-top: 0;
-    }
-
-    h3 {
-      margin: 0 0 12px;
-      font-size: 20px;
-      color: var(--primary);
-      letter-spacing: 0.2px;
+    & + .category-block {
+      margin-top: 64px;
     }
   }
 
@@ -35,13 +20,14 @@
     list-style: none;
 
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 18px;
 
     li {
       .project-card {
         width: 100%;
-        min-height: 225px;
+        min-width: 0;
+        min-height: 220px;
         cursor: pointer;
         padding: 18px;
 
@@ -87,6 +73,20 @@
             height: auto;
             object-fit: contain;
           }
+
+          .project-card__fallback {
+            display: grid;
+            place-items: center;
+            width: 72px;
+            height: 72px;
+            border: 1px solid rgba(39, 169, 100, 0.5);
+            border-radius: 18px;
+            background: rgba(39, 169, 100, 0.1);
+            color: var(--primary);
+            font-size: 15px;
+            font-weight: 800;
+            letter-spacing: 1px;
+          }
         }
 
         .project-card__content {
@@ -98,6 +98,7 @@
           span {
             margin: 0;
             text-align: left;
+            overflow-wrap: anywhere;
           }
 
           h4 {
@@ -116,9 +117,15 @@
     }
   }
 
-  @media (max-width: 750px) {
+  @media (max-width: 900px) {
     ul {
-      grid-template-columns: 1fr;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
+  @media (max-width: 520px) {
+    ul {
+      grid-template-columns: minmax(0, 1fr);
     }
   }
 }

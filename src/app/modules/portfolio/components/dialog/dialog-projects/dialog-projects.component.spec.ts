@@ -1,4 +1,8 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import {
+  MAT_DIALOG_DATA,
+  MatDialogRef,
+} from '@angular/material/dialog';
 
 import { DialogProjectsComponent } from './dialog-projects.component';
 
@@ -8,7 +12,23 @@ describe('DialogProjectsComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [DialogProjectsComponent]
+      imports: [DialogProjectsComponent],
+      providers: [
+        {
+          provide: MatDialogRef,
+          useValue: {
+            close: jasmine.createSpy('close'),
+          },
+        },
+        {
+          provide: MAT_DIALOG_DATA,
+          useValue: {
+            title: 'Projeto',
+            description: '<p>Descrição</p>',
+            links: [],
+          },
+        },
+      ],
     })
     .compileComponents();
     

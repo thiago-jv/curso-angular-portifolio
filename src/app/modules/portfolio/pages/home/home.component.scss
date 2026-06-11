@@ -1,16 +1,9 @@
 :host {
-  main {
-    display: grid;
-    gap: 0;
-    padding-bottom: 20px;
-  }
+  display: block;
+  min-width: 0;
+  overflow: clip;
+}
 
-  section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    padding: 20px 0;
-    text-align: center;
-  }
+main {
+  min-width: 0;
 }

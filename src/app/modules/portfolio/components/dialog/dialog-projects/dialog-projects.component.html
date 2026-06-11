@@ -2,7 +2,7 @@
   <h2 mat-dialog-title>{{ getData()?.title }}</h2>
 
   <button type="button" (click)="closeModal()" aria-label="Fechar janela">
-    <img src="assets/icons/dialog/close.svg" alt="Botão para fechar o dialog" />
+    <img src="assets/icons/dialog/close.svg" alt="" />
   </button>
 </header>
 
@@ -13,7 +13,12 @@
 
   <nav>
     @for(item of getData()?.links; track item){
-    <a [href]="item.href" target="_blank" class="btn btn-primary">
+    <a
+      [href]="item.href"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="btn btn-primary"
+    >
       {{ item.name }}
     </a>
     }

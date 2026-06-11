@@ -8,10 +8,14 @@
   cursor: pointer;
 
   &.btn-primary,
-  &.btn-secondary {
-    padding: 10px;
-    font-size: 16px;
-    border-radius: 7px;
+  &.btn-secondary,
+  &.btn-outline {
+    min-height: 44px;
+    padding: 11px 16px;
+    border: 1px solid transparent;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 8px;
   }
 
   &.btn-primary {
@@ -31,6 +35,18 @@
 
     &:hover {
       background: var(--secondary-010);
+      transform: translateY(-1px);
+    }
+  }
+
+  &.btn-outline {
+    color: var(--white);
+    border-color: rgba(255, 255, 255, 0.3);
+    background: transparent;
+
+    &:hover {
+      border-color: var(--primary);
+      color: var(--primary);
       transform: translateY(-1px);
     }
   }

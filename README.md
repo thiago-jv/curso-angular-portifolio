@@ -1,30 +1,31 @@
-# Portfólio Angular
+# Portfólio Profissional - Thiago Melo
 
-Portfólio pessoal desenvolvido em Angular 17 para apresentar projetos, experiências profissionais e stack técnica em uma interface responsiva.
-
-O projeto foi construído como prática de estudos com base no curso de Angular da Udemy:
-https://www.udemy.com/course/curso-de-angular/?srsltid=AfmBOorFvdxsf1cQa5RmcA7aLAWTvn2Aq0lE78ApRW80692k5pSbkWnX
+Portfólio profissional de Thiago Henrique Melo da Silva, Desenvolvedor Java
+Sênior com mais de 8 anos de experiência em sistemas corporativos.
 
 ## Demo
 
-Aplicação publicada no GitHub Pages:
-
 https://thiago-jv.github.io/curso-angular-portifolio/
 
-## Preview
+## Objetivos
 
-![Preview do portfólio](src/assets/img/og-image-portfolio.png)
+- Apresentar experiência profissional e principais entregas.
+- Demonstrar domínio de Java, Spring Boot, AWS, Angular e arquitetura.
+- Reunir projetos próprios, formação e certificações.
+- Facilitar o contato para oportunidades CLT e projetos PJ.
 
 ## Funcionalidades
 
-- Apresentação pessoal com links de contato.
-- Sessão de conhecimentos com stack técnica.
-- Sessão de experiências profissionais e acadêmicas.
-- Listagem de projetos com carregamento tardio usando `@defer`.
-- Modal com detalhes dos projetos utilizando Angular Material.
-- Layout responsivo para desktop e mobile.
+- Hero com posicionamento profissional e links de contato.
+- Seção de principais entregas por contexto de negócio.
+- Stack principal organizada por área.
+- Histórico profissional expansível.
+- Cards de projetos próprios.
+- Formação e certificações com detalhes em dialogs.
+- Metadados Open Graph, Twitter Cards e Schema.org `Person`.
+- Layout responsivo e navegação acessível por teclado.
 
-## Stack
+## Stack do projeto
 
 - Angular 17
 - TypeScript
@@ -37,48 +38,38 @@ https://thiago-jv.github.io/curso-angular-portifolio/
 
 ```text
 src/app/modules/portfolio/
-	components/
-		header/
-		knowledge/
-		experiences/
-		projects/
-		dialog/dialog-projects/
-	interface/
-	enum/
-	pages/home/
+  components/
+    contact/
+    deliveries/
+    dialog/
+    experiences/
+    header/
+    knowledge/
+    portfolio-projects/
+    projects/
+  interface/
+  enum/
+  pages/home/
 ```
 
-## Como executar localmente
+## Execução local
 
 ```bash
-npm install
+npm ci
 npm start
 ```
 
-Abra `http://localhost:4200/` no navegador.
+A aplicação estará disponível em `http://localhost:4200/`.
 
-## Scripts disponíveis
+## Build
 
 ```bash
-npm start            # ambiente de desenvolvimento
-npm run build        # build padrão
+npm run build
 npm run build:gh-pages
-npm run deploy:gh-pages
-npm test
 ```
 
 ## Deploy no GitHub Pages
 
-O deploy está configurado para publicar a aplicação no branch `gh-pages` com o `base-href` correto para este repositório.
-
 ```bash
 npm run deploy:gh-pages
 ```
-
-URL de publicação:
-
-https://thiago-jv.github.io/curso-angular-portifolio/
-
-## Objetivo do projeto
-
-Consolidar conceitos práticos de Angular, componentização, organização de estilos com SCSS e publicação de aplicações estáticas no GitHub Pages.

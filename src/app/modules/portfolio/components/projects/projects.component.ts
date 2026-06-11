@@ -22,16 +22,16 @@ import { DialogProjectsComponent } from '../dialog/dialog-projects/dialog-projec
 export class ProjectsComponent {
   #dialog = inject(MatDialog);
 
-  public arrayProjects = signal<IProjects[]>([
+  public readonly arrayProjects = signal<IProjects[]>([
     {
       category: 'formacao',
       src: 'assets/img/fametro.jpeg',
-      alt: 'Bacharel - Sistemas da Informação',
+      alt: 'Marca do Centro Universitário Fametro',
       title: 'Sistemas da Informação',
       with: '140px',
       height: '90px',
       description:
-        '<p><strong>Centro Universitario Fametro</strong> - Sistemas de Informacao (2009-2013).</p><p>Curso de Bacharelado em Sistemas de Informacao, com formacao em desenvolvimento de software, banco de dados, redes, engenharia de software e gestao de TI.</p>',
+        '<p><strong>Centro Universitário Fametro</strong> - Sistemas de Informação (2009-2013).</p><p>Bacharelado com formação em desenvolvimento de software, bancos de dados, redes, engenharia de software e gestão de TI.</p>',
       links: [
         {
           name: 'Perfil no LinkedIn',
@@ -42,12 +42,12 @@ export class ProjectsComponent {
     {
       category: 'formacao',
       src: 'assets/img/academyeducacao.svg',
-      alt: 'MBA Academy Educacao',
-      title: 'MBA - Gestao de Projetos e Metodologias Ageis',
+      alt: 'Marca da Academy Educação',
+      title: 'MBA - Gestão de Projetos e Metodologias Ágeis',
       with: '140px',
       height: '90px',
       description:
-        '<p><strong>Academy Educacao</strong> - MBA em Gestao de Projetos, Metodologias Ageis e Inovacao (2024-2025).</p><p>Formacao voltada para gerentes de projetos, lideres de equipe e gestores que desejam adotar metodologias ageis e impulsionar a inovacao.</p>',
+        '<p><strong>Academy Educação</strong> - MBA em Gestão de Projetos, Metodologias Ágeis e Inovação (2024-2025).</p><p>Formação voltada à gestão de projetos, liderança de equipes, métodos ágeis e inovação.</p>',
       links: [
         {
           name: 'LinkedIn',
@@ -57,13 +57,12 @@ export class ProjectsComponent {
     },
     {
       category: 'formacao',
-      src: 'assets/img/unipds.webp',
-      alt: 'Pos-graduacao Java Applied Engineering UNIPDS',
-      title: 'Pos-graduacao Java Applied Engineering',
+      alt: 'Pós-graduação Java Applied Engineering',
+      title: 'Pós-graduação Java Applied Engineering',
       with: '140px',
       height: '90px',
       description:
-        '<p><strong>UNIPDS</strong> - Pos-graduacao Lato Sensu em Engenharia de Software com foco em Java (fev/2025-abr/2026).</p><p>Aprofundamento em arquitetura de sistemas distribuidos, Spring Boot, microservicos, mensageria, testes automatizados, Clean Code, SOLID, Design Patterns e ambientes conteinerizados.</p>',
+        '<p><strong>Anhanguera Educacional</strong> - Java Applied Engineering (2025-2026).</p><p>Formação com foco em engenharia de software aplicada ao ecossistema Java.</p>',
       links: [
         {
           name: 'LinkedIn',
@@ -74,12 +73,12 @@ export class ProjectsComponent {
     {
       category: 'formacao',
       src: 'assets/img/pucrs.jpeg',
-      alt: 'MBA PUCRS Lideranca e Pessoas',
-      title: 'MBA - Lideranca, Gestao de Equipes e Produtividade',
+      alt: 'Marca da PUCRS',
+      title: 'MBA - Liderança, Gestão de Equipes e Produtividade',
       with: '140px',
       height: '90px',
       description:
-        '<p><strong>PUCRS</strong> - MBA em Gestao e Negocios com foco em Lideranca e Pessoas (abr/2026-abr/2027).</p><p>Formacao voltada ao desenvolvimento de competencias estrategicas para lideranca de equipes de alta performance, gestao de pessoas, tomada de decisao e produtividade organizacional.</p>',
+        '<p><strong>PUCRS</strong> - MBA em Gestão e Negócios com foco em Liderança e Pessoas (abr/2026-abr/2027).</p><p>Formação em andamento, voltada ao desenvolvimento de competências de liderança, gestão de pessoas, tomada de decisão e produtividade.</p>',
       links: [
         {
           name: 'LinkedIn',
@@ -91,11 +90,11 @@ export class ProjectsComponent {
       category: 'certificado',
       src: 'assets/img/certprof-scrumfoundation.jpeg',
       alt: 'Scrum Foundation Professional Certificate - CertiProf',
-      title: 'Certificacao Scrum Foundation – CertiProf',
+      title: 'Certificação Scrum Foundation - CertiProf',
       with: '140px',
       height: '90px',
       description:
-        '<p>Scrum Foundation Professional Certificate (SFPC) - CertiProf.</p><p>Aplicacao continua de Scrum e Kanban em projetos corporativos de grande porte nos segmentos financeiro, e-commerce e saude.</p>',
+        '<p>Scrum Foundation Professional Certificate (SFPC) - CertiProf.</p><p>Conhecimentos aplicados em contextos profissionais com Scrum e Kanban.</p>',
       links: [
         {
           name: 'Ver no LinkedIn',
@@ -106,12 +105,12 @@ export class ProjectsComponent {
     {
       category: 'certificado',
       src: 'assets/img/fullstack-angular-spring.jpeg',
-      alt: 'Certificado Fullstack Angular e Spring',
-      title: 'Curso Fullstack Angular e Spring',
+      alt: 'Certificado Full Stack Angular e Spring',
+      title: 'Curso Full Stack Angular e Spring',
       with: '140px',
       height: '90px',
       description:
-        '<p><strong>AlgaWorks</strong> - Curso Fullstack Angular e Spring.</p><p>Formacao focada em desenvolvimento frontend e backend com Spring boot e Angular</p><p>Conclusao em 26/11/2024, com carga horaria de 120 horas.</p>',
+        '<p><strong>AlgaWorks</strong> - Curso Full Stack Angular e Spring.</p><p>Formação em desenvolvimento frontend e backend com Spring Boot e Angular.</p><p>Conclusão em 26/11/2024, com carga horária de 120 horas.</p>',
       links: [
         {
           name: 'Ver no LinkedIn',
@@ -127,7 +126,7 @@ export class ProjectsComponent {
       with: '140px',
       height: '90px',
       description:
-        '<p><strong>Branas</strong> - Curso de Clean Code e Clean Architecture.</p><p>Aprendizado em Clean Code, refatoracao, OO, TDD, arquitetura hexagonal, Domain-Driven Design, microservices, Event-Driven Architecture, CQRS, SOLID e Design Patterns.</p><p>Formacao abrangente do frontend ao backend, com foco em alta performance.</p>',
+        '<p><strong>Branas</strong> - Curso de Clean Code e Clean Architecture.</p><p>Conteúdo sobre refatoração, orientação a objetos, TDD, arquitetura hexagonal, Domain-Driven Design, microserviços, Event-Driven Architecture, CQRS, SOLID e Design Patterns.</p>',
       links: [
         {
           name: 'Ver no LinkedIn',
@@ -138,12 +137,12 @@ export class ProjectsComponent {
     {
       category: 'certificado',
       src: 'assets/img/java-8.jpeg',
-      alt: 'Certificado Fundamentos da Linguagem de Programacao Java SE 8',
-      title: 'Fundamentos da Linguagem de Programacao Java SE 8',
+      alt: 'Certificado Fundamentos da Linguagem de Programação Java SE 8',
+      title: 'Fundamentos da Linguagem de Programação Java SE 8',
       with: '140px',
       height: '90px',
       description:
-        '<p><strong>Ka Solution</strong> - Fundamentos da Linguagem de Programacao Java SE 8.</p><p>Curso concluido no periodo de 16/01/2021 a 13/02/2021, com carga horaria total de 40 horas.</p><p>Base tecnica em sintaxe da linguagem, orientacao a objetos e fundamentos essenciais para desenvolvimento Java.</p>',
+        '<p><strong>Ka Solution</strong> - Fundamentos da Linguagem de Programação Java SE 8.</p><p>Curso concluído entre 16/01/2021 e 13/02/2021, com carga horária de 40 horas.</p>',
       links: [
         {
           name: 'Ver no LinkedIn',
@@ -159,7 +158,7 @@ export class ProjectsComponent {
       with: '140px',
       height: '90px',
       description:
-        '<p>Certificado de participacao no <strong>Management 3.0 Foundation Workshop</strong> (set/2024).</p><p>Abordagem de gestao orientada a lideranca agil, motivacao de equipes, colaboracao, autonomia com responsabilidade e adaptacao continua as mudancas.</p><p>Foco pratico em melhorar cultura organizacional, desenvolvimento de competencias e resultados sustentaveis.</p>',
+        '<p>Certificado de participação no <strong>Management 3.0 Foundation Workshop</strong> (set/2024).</p><p>Conteúdo sobre liderança ágil, motivação de equipes, colaboração, autonomia e adaptação a mudanças.</p>',
       links: [
         {
           name: 'Ver no LinkedIn',
@@ -170,12 +169,12 @@ export class ProjectsComponent {
     {
       category: 'certificado',
       src: 'assets/img/tecnicas-lideranca-pnl.jpeg',
-      alt: 'Certificado Lideranca com Tecnicas de PNL',
-      title: 'Lideranca com Tecnicas de PNL',
+      alt: 'Certificado Liderança com Técnicas de PNL',
+      title: 'Liderança com Técnicas de PNL',
       with: '140px',
       height: '90px',
       description:
-        '<p>Curso de <strong>Lideranca com Tecnicas de PNL</strong>, concluido em 18/08/2024.</p><p>Formacao voltada para comunicacao, influencia, autoconhecimento e desenvolvimento de habilidades de lideranca aplicadas a contextos profissionais.</p><p>Aplicacao pratica de tecnicas para melhorar tomada de decisao, relacionamento interpessoal e performance de equipes.</p>',
+        '<p>Curso de <strong>Liderança com Técnicas de PNL</strong>, concluído em 18/08/2024.</p><p>Formação voltada à comunicação, influência, autoconhecimento e habilidades de liderança.</p>',
       links: [
         {
           name: 'Ver no LinkedIn',
@@ -191,7 +190,7 @@ export class ProjectsComponent {
       with: '140px',
       height: '90px',
       description:
-        '<p>Certificacao em <strong>Analise de Perfil Comportamental DISC</strong>, emitida em ago/2024.</p><p>Capacitacao para interpretar perfis comportamentais com base nos quatro fatores DISC: Dominancia (D), Influencia (I), Estabilidade (S) e Conformidade (C).</p><p>Aplicacao em desenvolvimento de pessoas, comunicacao, lideranca e melhor composicao de equipes.</p>',
+        '<p>Certificação em <strong>Análise de Perfil Comportamental DISC</strong>, emitida em ago/2024.</p><p>Capacitação para interpretar perfis com base nos fatores Dominância, Influência, Estabilidade e Conformidade.</p>',
       links: [
         {
           name: 'Ver no LinkedIn',

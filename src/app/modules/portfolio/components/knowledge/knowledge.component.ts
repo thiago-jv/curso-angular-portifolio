@@ -1,5 +1,10 @@
 import { Component, signal } from '@angular/core';
 
+interface KnowledgeCategory {
+  title: string;
+  items: string[];
+}
+
 @Component({
   selector: 'app-knowledge',
   standalone: true,
@@ -8,51 +13,87 @@ import { Component, signal } from '@angular/core';
   styleUrl: './knowledge.component.scss',
 })
 export class KnowledgeComponent {
-  public categories = signal<Array<{ title: string; items: string }>>([
-    {
-      title: 'Principais Tecnologias',
-      items:
-        'Java (7-21), Spring Boot, Spring Cloud, Microservices, Angular (5-17), TypeScript, Docker, Kubernetes, CI/CD (Jenkins e CI/CD).',
-    },
+  public readonly categories = signal<KnowledgeCategory[]>([
     {
       title: 'Backend',
-      items:
-        'Spring Data, Spring REST, Spring Security, Java EE, JSF, EJB, Quarkus, Swagger/OpenAPI, Lombok e MapStruct.',
+      items: [
+        'Java 6-21',
+        'Spring Boot',
+        'Spring Security',
+        'Spring Data JPA',
+        'Spring Cloud',
+        'Quarkus',
+        'Java EE',
+        'EJB',
+        'MapStruct',
+        'OpenAPI',
+      ],
     },
     {
       title: 'Frontend',
-      items: 'Angular, PrimeNG, Angular Material, HTML, CSS, JavaScript e TypeScript',
+      items: [
+        'Angular 11-17',
+        'TypeScript',
+        'Angular Material',
+        'PrimeNG',
+        'HTML',
+        'CSS',
+        'JavaScript',
+      ],
     },
     {
-      title: 'Testes',
-      items: 'JUnit, RestAssured, WireMock e TDD.',
+      title: 'Cloud e DevOps',
+      items: [
+        'AWS',
+        'IAM',
+        'EC2',
+        'RDS',
+        'AWS Secrets Manager',
+        'Docker',
+        'Kubernetes',
+        'Jenkins',
+        'Azure DevOps',
+        'SonarQube',
+        'Linux',
+      ],
     },
     {
-      title: 'Arquitetura e Praticas',
-      items:
-        'Microservices, Monolito, Clean Architecture, SOLID, Clean Code e Design Patterns.',
+      title: 'Dados e mensageria',
+      items: [
+        'PostgreSQL',
+        'Oracle',
+        'MongoDB',
+        'Kafka',
+        'RabbitMQ',
+        'Hibernate Panache',
+      ],
     },
     {
-      title: 'Banco de Dados',
-      items: 'PostgreSQL, Oracle, MongoDB e Reddis.',
+      title: 'Qualidade e arquitetura',
+      items: [
+        'JUnit',
+        'WireMock',
+        'RestAssured',
+        'TDD',
+        'SOLID',
+        'Clean Architecture',
+        'Arquitetura hexagonal',
+        'Microserviços',
+      ],
     },
     {
-      title: 'Mensageria',
-      items: 'Kafka e RabbitMQ.',
-    },
-    {
-      title: 'DevOps e Observabilidade',
-      items:
-        'Docker, Kubernetes, Jenkins, SonarQube, Prometheus e Grafana.',
-    },
-    {
-      title: 'Ferramentas e Metodologias',
-      items:
-        'Git, IntelliJ IDEA, Eclipse, VSCode, WebSphere, JBoss, WildFly, Tomcat, JasperReports, iReport, Scrum e Kanban.',
-    },
-    {
-      title: 'Idioma',
-      items: 'Ingles A2 - leitura e escrita tecnica basica.',
+      title: 'Ferramentas, métodos e idioma',
+      items: [
+        'Grafana',
+        'Prometheus',
+        'Scrum',
+        'Kanban',
+        'Clean Code',
+        'Design Patterns',
+        'Git',
+        'Jira',
+        'Inglês A2',
+      ],
     },
   ]);
 }

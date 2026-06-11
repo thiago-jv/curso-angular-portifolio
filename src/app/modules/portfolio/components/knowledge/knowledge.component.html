@@ -1,12 +1,25 @@
-<div class="container">
-  <h2>Conhecimentos Tecnicos</h2>
+<section id="stack" class="knowledge" aria-labelledby="knowledge-title">
+  <div class="container">
+    <div class="section-heading">
+      <p class="section-kicker">Competências técnicas</p>
+      <h2 id="knowledge-title">Stack principal</h2>
+      <p>
+        Tecnologias que fazem parte da minha atuação profissional e da
+        construção de aplicações corporativas.
+      </p>
+    </div>
 
-  <ul>
-    @for(category of categories(); track category.title){
-    <li>
-      <h3>{{ category.title }}</h3>
-      <p>{{ category.items }}</p>
-    </li>
-    }
-  </ul>
-</div>
+    <div class="knowledge__grid">
+      @for (category of categories(); track category.title) {
+      <article>
+        <h3>{{ category.title }}</h3>
+        <ul>
+          @for (item of category.items; track item) {
+          <li>{{ item }}</li>
+          }
+        </ul>
+      </article>
+      }
+    </div>
+  </div>
+</section>

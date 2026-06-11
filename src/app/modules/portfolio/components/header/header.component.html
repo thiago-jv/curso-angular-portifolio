@@ -1,121 +1,112 @@
-<section class="tech-carousel" aria-label="Tecnologias e ferramentas de atuacao">
-  <div class="tech-carousel__track">
-    @for(item of techCarouselItems; track item){
-    <span class="chip">{{ item }}</span>
-    }
+<a class="skip-link" href="#conteudo-principal">Ir para o conteúdo principal</a>
 
-    @for(item of techCarouselItems; track item + '-clone'){
-    <span class="chip" aria-hidden="true">{{ item }}</span>
-    }
+<header class="site-header">
+  <div class="container">
+    <a class="brand" href="#inicio" aria-label="Ir para o início">
+      <span aria-hidden="true">TH</span>
+      <strong>Thiago Melo</strong>
+    </a>
+
+    <nav aria-label="Navegação principal">
+      <a href="#sobre">Sobre</a>
+      <a href="#experiencia">Experiência</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </div>
+</header>
+
+<section id="inicio" class="hero" aria-labelledby="hero-title">
+  <div class="container hero__layout">
+    <div class="hero__content">
+      <p class="eyebrow">Desenvolvimento de software corporativo</p>
+      <h1 id="hero-title">Thiago Henrique Melo da Silva</h1>
+      <p class="hero__role">Desenvolvedor Java Sênior</p>
+      <p class="hero__subtitle">
+        Java, Spring Boot, microserviços, Angular e arquitetura de software
+      </p>
+
+      <ul class="hero__indicators" aria-label="Resumo profissional">
+        <li class="experience-badge">+8 anos de experiência</li>
+        @for (technology of primaryTechnologies; track technology) {
+        <li>{{ technology }}</li>
+        }
+      </ul>
+
+      <div class="hero__actions" aria-label="Links profissionais">
+        <a
+          href="assets/pdf/cv.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn btn-primary"
+        >
+          Baixar CV
+        </a>
+        <a
+          href="https://www.linkedin.com/in/thiago-melo-045950b6/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn btn-secondary"
+        >
+          LinkedIn
+        </a>
+        <a
+          href="https://github.com/thiago-jv"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn btn-secondary"
+        >
+          GitHub
+        </a>
+        <a
+          href="https://api.whatsapp.com/send?phone=5592991679485&text=Ol%C3%A1%20Thiago%2C%20vi%20seu%20portf%C3%B3lio%20e%20quero%20falar%20sobre%20uma%20oportunidade."
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn btn-outline"
+        >
+          WhatsApp
+        </a>
+      </div>
+    </div>
+
+    <div class="hero__portrait">
+      <div class="hero__portrait-frame">
+        <img
+          src="assets/img/thiago.jpeg"
+          alt="Thiago Henrique Melo da Silva"
+          width="460"
+          height="460"
+          loading="eager"
+          fetchpriority="high"
+        />
+      </div>
+      <p>Manaus, Amazonas, Brasil</p>
+    </div>
   </div>
 </section>
 
-<header>
-  <img
-    src="assets/img/thiago.jpeg"
-    alt="Thiago Henrique Melo da Silva - Foto de Perfil"
-    width="230px"
-    height="230px"
-    loading="eager"
-  />
-  <h1>Thiago Henrique Melo da Silva</h1>
-</header>
+<section id="sobre" class="about" aria-labelledby="about-title">
+  <div class="container about__layout">
+    <div>
+      <p class="section-kicker">Sobre mim</p>
+      <h2 id="about-title">Experiência técnica aliada ao contexto de negócio</h2>
+    </div>
 
-<aside>
-  <div class="container">
-    <p class="headline">Analista Desenvolvedor Java - Fullstack - Angular</p>
-    <p class="location">Manaus, Amazonas, Brasil</p>
-    <p class="about-text">
-      Minha trajetoria em tecnologia comecou em 2013, no estagio em TI na
-      Distribuidora Tapajos, com suporte tecnico e manutencao de infraestrutura.
-      Em 2014, atuei no Hospital Joao Lucio com suporte a usuarios e sistemas
-      hospitalares, e no mesmo periodo realizei estagio em desenvolvimento de
-      software no Centro Universitario Fametro. A partir dai, evolui para
-      funcoes de analise e desenvolvimento no Grupo Bringel, participando da
-      implantacao de sistemas hospitalares e, em seguida, do desenvolvimento
-      full stack de solucoes para rastreabilidade na area da saude.
-    </p>
-    <p class="about-text">
-      Nos anos seguintes, consolidei minha carreira como Desenvolvedor Java em
-      empresas como AMcom, DBC Company, Kaspper, Invillia e Globalweb, atuando
-      em projetos dos setores de saude, e-commerce, financeiro e seguranca
-      privada, com foco em Java, Spring, microservicos, Angular, qualidade de
-      codigo e CI/CD. Hoje atuo na Spassu como Analista Desenvolvedor Java
-      Fullstack Angular, em projeto para o setor de petroleo, trabalhando com
-      Java 8 e Spring Boot no backend, Angular 17 com Material no frontend,
-      CI/CD com Jenkins e observabilidade com Grafana e Prometheus. Nesse
-      contexto, aplico SOLID e Clean Code, participo das discussoes tecnicas de
-      HUs e contribuo para entregas estaveis, com integracao eficiente entre
-      frontend e backend, dentro dos prazos das sprints em ambiente agil com
-      Scrum e Kanban.
-    </p>
-
-
-    <nav>
-      <ul>
-        <li>
-          <a href="assets/pdf/cv.pdf" target="_blank" class="btn btn-primary">
-            Download CV
-          </a>
-        </li>
-
-        <li>
-          <a
-            href="https://www.linkedin.com/in/thiago-melo-045950b6/"
-            target="_blank"
-            class="btn btn-secondary"
-          >
-            LinkedIn
-          </a>
-        </li>
-
-        <li>
-          <a
-            href="https://github.com/thiago-jv"
-            target="_blank"
-            class="btn btn-secondary"
-          >
-            GitHub
-          </a>
-        </li>
-      </ul>
-    </nav>
-
-    <section>
-      <figure>
-        <img
-          src="assets/icons/whatsapp.svg"
-          alt="Icone para contato do WhatsApp"
-          width="22px"
-          height="24px"
-        />
-
-        <figcaption>
-          <a
-            href="https://api.whatsapp.com/send?phone=5592991679485&text=Ola%20Thiago,%20vi%20seu%20portfolio%20e%20quero%20falar%20sobre%20uma%20oportunidade."
-            target="_blank"
-          >
-            <strong>Envie uma mensagem para:</strong>
-            <p>WhatsApp: (92) 99167-9485</p>
-          </a>
-        </figcaption>
-      </figure>
-
-      <figure>
-        <img
-          src="assets/icons/mail.svg"
-          alt="Icone para contato do e-mail"
-          width="22px"
-          height="24px"
-        />
-
-        <figcaption>
-          <a href="mailto:thiago.henrique.25@hotmail.com" target="_blank">
-            <strong>Envie um e-mail para:</strong>
-            <p>thiago.henrique.25&#64;hotmail.com</p>
-          </a>
-        </figcaption>
-      </figure>
-    </section>
+    <div class="about__content">
+      <p>
+        Desenvolvedor Java com mais de 8 anos de experiência na construção e
+        evolução de soluções escaláveis. Atuo em backend, frontend e arquitetura
+        de software, com experiência em ambientes distribuídos, microserviços,
+        mensageria, integração entre sistemas e práticas modernas de
+        desenvolvimento.
+      </p>
+      <p>
+        Minha trajetória inclui projetos nos setores de saúde, e-commerce,
+        financeiro, segurança privada, petróleo, logística portuária e medição
+        inteligente, incluindo iniciativas de alcance internacional. Aplico
+        Clean Code, SOLID, TDD e Design Patterns, além de atuar com CI/CD,
+        conteinerização e observabilidade.
+      </p>
+    </div>
   </div>
-</aside>
+</section>

@@ -1,64 +1,54 @@
 :host {
-  margin-top: 18px;
-  padding: 34px 0;
+  display: block;
+}
+
+.knowledge {
+  padding: 72px 0;
   background: var(--black-010);
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-
-  h2 {
-    text-align: center;
-    margin: 0 0 6px;
+  .knowledge__grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
   }
 
-  ul {
-    margin-top: 20px;
-    padding: 0;
+  article {
+    min-width: 0;
+    padding: 22px;
+    border: 1px solid rgba(255, 255, 255, 0.09);
+    border-radius: 12px;
+    background: var(--surface);
 
-    display: flex;
-    justify-content: center;
-    align-items: stretch;
-    flex-wrap: wrap;
-    gap: 15px;
+    h3 {
+      margin: 0 0 16px;
+      color: var(--primary);
+      font-size: 18px;
+    }
+
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
 
     li {
-      width: 100%;
-      max-width: 350px;
-      background: var(--surface);
-      border: 1px solid rgba(39, 169, 100, 0.4);
-      list-style: none;
-      padding: 18px;
-
-      display: grid;
-      gap: 8px;
-      border-radius: 10px;
-      transition: transform var(--motion-fast), box-shadow var(--motion-fast),
-        border-color var(--motion-fast), background var(--motion-fast);
-
-      &:hover {
-        transform: translateY(-3px);
-        border-color: rgba(255, 255, 255, 0.5);
-        background: var(--surface-010);
-        box-shadow: 0 10px 24px rgba(0, 0, 0, 0.3);
-      }
-
-      h3,
-      p {
-        margin: 0;
-      }
-
-      h3 {
-        color: var(--primary);
-        font-size: 18px;
-      }
-
-      p {
-        color: var(--grey);
-        font-size: 15px;
-        line-height: 1.65;
-      }
+      padding: 6px 9px;
+      border-radius: 7px;
+      background: rgba(255, 255, 255, 0.045);
+      color: var(--grey);
+      font-size: 13px;
     }
+  }
+}
+
+@media (max-width: 850px) {
+  .knowledge .knowledge__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 560px) {
+  .knowledge .knowledge__grid {
+    grid-template-columns: 1fr;
   }
 }
