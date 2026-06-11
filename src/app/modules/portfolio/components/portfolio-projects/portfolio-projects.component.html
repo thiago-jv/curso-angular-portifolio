@@ -26,6 +26,18 @@
           {{ project.learning }}
         </p>
 
+        @if (project.website) {
+        <a
+          class="portfolio-projects__link"
+          [href]="project.website"
+          target="_blank"
+          rel="noopener noreferrer"
+          [attr.aria-label]="'Acessar o site do projeto ' + project.title"
+        >
+          Acessar site
+        </a>
+        }
+
         <ul [attr.aria-label]="'Tecnologias do projeto ' + project.title">
           @for (technology of project.technologies; track technology) {
           <li>{{ technology }}</li>

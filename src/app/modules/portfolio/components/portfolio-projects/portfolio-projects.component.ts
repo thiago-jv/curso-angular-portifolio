@@ -6,6 +6,7 @@ interface PortfolioProject {
   technologies: string[];
   learning: string;
   status?: string;
+  website?: string;
 }
 
 @Component({
@@ -24,6 +25,8 @@ export class PortfolioProjectsComponent {
       technologies: ['Angular 22', 'Bootstrap', 'SEO Local', 'Vercel'],
       learning:
         'Aplicação prática de responsividade, publicação web e organização de conteúdo para busca local.',
+      status: 'Publicado',
+      website: 'https://www.lucascellmanaus.com.br/',
     },
     {
       title: 'Sistema de Estoque Lucas Cell',

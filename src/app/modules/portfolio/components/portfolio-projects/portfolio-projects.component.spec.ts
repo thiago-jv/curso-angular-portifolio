@@ -19,4 +19,14 @@ describe('PortfolioProjectsComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should render the published Lucas Cell website', () => {
+    const link: HTMLAnchorElement | null =
+      fixture.nativeElement.querySelector('.portfolio-projects__link');
+
+    expect(link?.textContent).toContain('Acessar site');
+    expect(link?.href).toBe('https://www.lucascellmanaus.com.br/');
+    expect(link?.target).toBe('_blank');
+    expect(link?.rel).toContain('noopener');
+  });
 });

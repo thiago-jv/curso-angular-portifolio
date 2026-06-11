@@ -32,6 +32,25 @@
       margin: 0;
     }
 
+    .portfolio-projects__link {
+      width: fit-content;
+      margin-top: 18px;
+      color: var(--primary);
+      font-weight: 700;
+      text-decoration: underline;
+      text-underline-offset: 4px;
+
+      &:hover {
+        color: var(--text);
+      }
+
+      &:focus-visible {
+        border-radius: 4px;
+        outline: 2px solid var(--primary);
+        outline-offset: 4px;
+      }
+    }
+
     ul {
       margin-top: auto;
       padding-top: 24px;
