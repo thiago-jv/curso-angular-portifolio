@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="background" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#10101a"/>
+      <stop offset="1" stop-color="#11251c"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#background)"/>
+  <circle cx="1090" cy="60" r="230" fill="none" stroke="#27a964" stroke-opacity=".14" stroke-width="72"/>
+  <rect x="78" y="78" width="78" height="78" rx="18" fill="#27a964"/>
+  <text x="117" y="129" fill="#10101a" font-family="Arial, sans-serif" font-size="30" font-weight="800" text-anchor="middle">TH</text>
+  <text x="78" y="272" fill="#ffffff" font-family="Arial, sans-serif" font-size="62" font-weight="700">Thiago Henrique</text>
+  <text x="78" y="342" fill="#ffffff" font-family="Arial, sans-serif" font-size="62" font-weight="700">Melo da Silva</text>
+  <text x="78" y="414" fill="#27a964" font-family="Arial, sans-serif" font-size="35" font-weight="700">Desenvolvedor Java Sênior</text>
+  <text x="78" y="474" fill="#c5c5d0" font-family="Arial, sans-serif" font-size="25">Spring Boot · Microserviços · Angular · AWS</text>
+  <text x="78" y="548" fill="#ffffff" font-family="Arial, sans-serif" font-size="22" font-weight="600">+8 anos de experiência</text>
+</svg>

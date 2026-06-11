@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://thiago-jv.github.io/curso-angular-portifolio/sitemap.xml
