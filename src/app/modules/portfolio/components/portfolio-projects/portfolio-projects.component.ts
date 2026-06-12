@@ -18,33 +18,41 @@ interface PortfolioProject {
 })
 export class PortfolioProjectsComponent {
   public readonly projects = signal<PortfolioProject[]>([
-    {
-      title: 'Lucas Cell',
-      description:
-        'Site institucional desenvolvido para apresentar os serviços da empresa, facilitar o contato de clientes e apoiar sua presença digital.',
-      technologies: ['Angular 22', 'Bootstrap', 'SEO Local', 'Vercel'],
-      learning:
-        'Aplicação prática de responsividade, publicação web e organização de conteúdo para busca local.',
-      status: 'Publicado',
-      website: 'https://www.lucascellmanaus.com.br/',
-    },
-    {
-      title: 'Sistema de Estoque Lucas Cell',
-      description:
-        'Aplicação em desenvolvimento para cadastro de produtos e apoio à organização e ao controle de estoque.',
-      technologies: ['Spring Boot', 'Angular', 'PostgreSQL', 'Docker'],
-      learning:
-        'Integração entre API, interface web, persistência de dados e ambiente conteinerizado.',
-      status: 'Em desenvolvimento',
-    },
-    {
-      title: 'Automação WhatsApp',
-      description:
-        'Projeto de estudo voltado à automação de tarefas no WhatsApp Web por meio do controle de navegador.',
-      technologies: ['Playwright', 'Node.js'],
-      learning:
-        'Automação de navegador, tratamento de fluxos assíncronos e experimentos de integração com recursos de IA.',
-      status: 'Em estudo',
-    },
-  ]);
+  {
+    title: 'Lucas Cell',
+    description:
+      'Site institucional desenvolvido para apresentar os serviços da empresa, facilitar o contato de clientes e apoiar sua presença digital.',
+    technologies: ['Angular 22', 'Bootstrap', 'SEO Local', 'Vercel'],
+    learning:
+      'Aplicação prática de responsividade, publicação web e organização de conteúdo para busca local.',
+    status: 'Publicado',
+    website: 'https://www.lucascellmanaus.com.br/',
+  },
+  {
+    title: 'SisKitnet',
+    description:
+      'Sistema web para gestão de kitnets, permitindo o controle de imóveis, inquilinos, contratos, lançamentos financeiros e acompanhamento de receitas e despesas.',
+    technologies: [
+      'Java 17',
+      'Spring Boot',
+      'Angular',
+      'PostgreSQL',
+      'Docker',
+      'AWS',
+    ],
+    learning:
+      'Desenvolvimento full stack com autenticação JWT, controle de acesso por permissões, modelagem de banco de dados, APIs REST e implantação em ambiente cloud.',
+    status: 'Publicado',
+    website: 'https://siskitnet.thiagomelotech.com.br/login',
+  },
+  {
+    title: 'Sistema de Estoque Lucas Cell',
+    description:
+      'Aplicação em desenvolvimento para cadastro de produtos e apoio à organização e ao controle de estoque.',
+    technologies: ['Spring Boot', 'Angular', 'PostgreSQL', 'Docker'],
+    learning:
+      'Integração entre API, interface web, persistência de dados e ambiente conteinerizado.',
+    status: 'Em desenvolvimento',
+  },
+]);
 }
